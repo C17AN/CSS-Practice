@@ -35,7 +35,7 @@ header {
 }
 .nav__links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 0px;
 }
 
 .nav__links li a {
@@ -44,6 +44,25 @@ header {
 
 .nav__links li a:hover {
   color: #0088a9;
+}
+
+.nav__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__dropdown li {
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.nav__links li .nav__dropdown a:hover {
+  background-color: #0088a9;
+}
+
+ul li:hover ul li {
+  display: block;
 }
 
 button {

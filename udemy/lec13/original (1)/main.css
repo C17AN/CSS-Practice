@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  height: 300px;
+}
+
+main {
+}
+
+#project-overview {
+  background-color: #ff1b68;
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid black;
+}
+
+.section-title {
+  color: #2ddf5c;
+  margin: 20px;
+  font-family: inherit;
+}
+
+h1 {
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}

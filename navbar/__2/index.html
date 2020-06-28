@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Navbar sample</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <img class = "logo" src = "../javascript.svg" alt = "logo"/>
-            <nav>
-                <ul class = "nav__links">
-                    <li><a href = "#">Services</a></li>
-                    <li><a href = "#">About</a></li>
-                    <li><a href = "#">Project</a></li>
-                </ul>
-            </nav>
-            <a class = "cta" href = "#"><button>Contact</button></a>
-        </header>
-    </body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Navbar sample</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../javascript.svg" alt="logo" />
+      <nav>
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="navItem">Services</a>
+            <ul class="nav__dropdown">
+              <li><a>ES6</a></li>
+              <li><a>React</a></li>
+              <li><a>Node.js</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="navItem">About</a>
+            <ul class="nav__dropdown">
+              <li><a>About Chan</a></li>
+              <li><a>About Kau</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="navItem">Project</a>
+            <ul class="nav__dropdown">
+              <li><a>PPOMODORO-Timer</a></li>
+              <li><a>SNS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+  </body>
 </html>
