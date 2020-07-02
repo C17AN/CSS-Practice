@@ -30,3 +30,34 @@ h1 {
   color: white;
   font-family: "Nanum Gothic", sans-serif;
 }
+
+.main-header > div {
+  display: inline-block;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 50px);
+}
+
+.main-header {
+  width: 100%;
+  background: #2dff5c;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+#sample-2 {
+  display: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
