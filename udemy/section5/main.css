@@ -213,3 +213,25 @@ main {
   color: white;
   font-size: 20px;
 }
+
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
