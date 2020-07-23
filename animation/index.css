@@ -1,0 +1,13 @@
+#test {
+  animation-duration: 7s;
+  animation-name: logo;
+}
+
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
