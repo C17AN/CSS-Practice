@@ -1,0 +1,85 @@
+/* body {
+  background-image: url(./photo.jpg);
+  background-size: cover;
+  background-color: #2b9742ad;
+  background-blend-mode: screen;
+} */
+
+body > #bg {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(2, 211, 248);
+  clip-path: polygon(100% 0, 100% 64%, 50% 100%, 0 100%, 0 0);
+  position: absolute;
+  z-index: -1;
+}
+
+body > #bg_2 {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(2, 211, 248);
+  position: absolute;
+  clip-path: polygon(100% 0, 100% 75%, 69% 100%, 0 100%, 0 0);
+  z-index: -1;
+}
+@keyframes blink {
+  0% {
+    background: violet;
+  }
+  14% {
+    background: red;
+  }
+  28% {
+    background: rgb(177, 102, 102);
+  }
+  42% {
+    background: rgb(60, 114, 69);
+  }
+  56% {
+    background: rgb(90, 81, 145);
+  }
+  70% {
+    background: rgb(30, 95, 52);
+  }
+  84% {
+    background: rgb(218, 209, 92);
+  }
+  100% {
+    background: rgb(122, 68, 129);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background: violet;
+  }
+  14% {
+    background: red;
+  }
+  28% {
+    background: rgb(177, 102, 102);
+  }
+  42% {
+    background: rgb(60, 114, 69);
+  }
+  56% {
+    background: rgb(90, 81, 145);
+  }
+  70% {
+    background: rgb(30, 95, 52);
+  }
+  84% {
+    background: rgb(218, 209, 92);
+  }
+  100% {
+    background: rgb(122, 68, 129);
+  }
+}
+
+#content {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  animation: blink 10s infinite;
+  -webkit-animation: blink 10s infinite;
+}
