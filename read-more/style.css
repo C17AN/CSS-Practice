@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #313131;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background: #3f3f3f;
+}
+
+.container .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #17e78c;
+  border-right: 20px solid #17e78c;
+}
+
+.container .card.active::before {
+  border-top: 20px solid #ff3b7e;
+  border-right: 20px solid #ff3b7e;
+}
+
+.container .card .icon {
+  margin-bottom: 10px;
+}
+
+.container .card .icon img {
+  max-width: 90px;
+}
+
+.container .card .content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, #3f3f3f);
+}
+
+.container .card.active .content::before {
+  background: none;
+}
+
+.container .card .content {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+
+.container .card.active .content {
+  position: relative;
+  height: auto;
+}
+
+.container .card .content h3 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container .card .content p {
+  font-weight: 300;
+  color: #ccc;
+}
+
+.container .card .more {
+  position: relative;
+  padding: 10px 15px;
+  background: #17e78c;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #383838;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.container .card.active .more {
+  content: "접기";
+  background: #ff3b7e;
+  color: #fff;
+}
+
+.container .card.active .more::before {
+  content: "접기";
+}
+
+.container .card .more::before {
+  content: "더 읽기";
+}

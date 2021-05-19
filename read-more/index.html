@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <img src="img1.png" alt="img" />
+        </div>
+        <div class="content">
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum sit amet nibh
+            et auctor. Maecenas id libero cursus, viverra lacus eu, iaculis libero. Ut viverra, odio
+            ac blandit viverra, lorem leo vehicula est, congue ullamcorper nisi justo at lectus.
+            Duis vel tellus justo. Ut ullamcorper vitae magna at consectetur. Maecenas convallis
+            dapibus tincidunt. In ac lectus vitae nisl semper efficitur. Cras ut est ut lacus
+            gravida maximus a sit amet nibh. Mauris tempor fringilla orci, nec ullamcorper purus
+            cursus at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Donec diam felis, posuere eu volutpat quis, iaculis eu enim.
+            Curabitur lobortis nec est porttitor tincidunt. Morbi a consequat nisi. Praesent
+            volutpat ex at nisl rutrum, ac commodo nibh sollicitudin.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="img2.png" alt="img" />
+        </div>
+        <div class="content">
+          <h3>Announcement</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum sit amet nibh
+            et auctor. Maecenas id libero cursus, viverra lacus eu, iaculis libero. Ut viverra, odio
+            ac blandit viverra, lorem leo vehicula est, congue ullamcorper nisi justo at lectus.
+            Duis vel tellus justo. Ut ullamcorper vitae magna at consectetur. Maecenas convallis
+            dapibus tincidunt. In ac lectus vitae nisl semper efficitur. Cras ut est ut lacus
+            gravida maximus a sit amet nibh. Mauris tempor fringilla orci, nec ullamcorper purus
+            cursus at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Donec diam felis, posuere eu volutpat quis, iaculis eu enim.
+            Curabitur lobortis nec est porttitor tincidunt. Morbi a consequat nisi. Praesent
+            volutpat ex at nisl rutrum, ac commodo nibh sollicitudin.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="img3.png" alt="img" />
+        </div>
+        <div class="content">
+          <h3>Customer Service</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum sit amet nibh
+            et auctor. Maecenas id libero cursus, viverra lacus eu, iaculis libero. Ut viverra, odio
+            ac blandit viverra, lorem leo vehicula est, congue ullamcorper nisi justo at lectus.
+            Duis vel tellus justo. Ut ullamcorper vitae magna at consectetur. Maecenas convallis
+            dapibus tincidunt. In ac lectus vitae nisl semper efficitur. Cras ut est ut lacus
+            gravida maximus a sit amet nibh. Mauris tempor fringilla orci, nec ullamcorper purus
+            cursus at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Donec diam felis, posuere eu volutpat quis, iaculis eu enim.
+            Curabitur lobortis nec est porttitor tincidunt. Morbi a consequat nisi. Praesent
+            volutpat ex at nisl rutrum, ac commodo nibh sollicitudin.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+    </div>
+    <script>
+      let more = document.querySelectorAll(".more");
+      for (let i = 0; i < more.length; i++) {
+        more[i].addEventListener("click", () => {
+          more[i].parentNode.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
